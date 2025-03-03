@@ -1,0 +1,23 @@
+{
+  "name": "namasthe_react",
+  "version": "1.0.0",
+  "description": "\"Hello this is Nagendra\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DorepalliN/Namesthe_React.git"
+  },
+  "keywords": [],
+  "author": "Nagendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DorepalliN/Namesthe_React/issues"
+  },
+  "homepage": "https://github.com/DorepalliN/Namesthe_React#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
