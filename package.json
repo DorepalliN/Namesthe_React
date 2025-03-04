@@ -2,8 +2,10 @@
   "name": "namasthe_react",
   "version": "1.0.0",
   "description": "\"Hello this is Nagendra\"",
-  "main": "app.js",
+  
   "scripts": {
+    "start":"parcel Hello.html",
+    "build":"parcel build Hello.html",
     "test": "jest"
   },
   "repository": {
@@ -18,6 +20,15 @@
   },
   "homepage": "https://github.com/DorepalliN/Namesthe_React#readme",
   "devDependencies": {
-    "parcel": "^2.13.3"
-  }
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist":[
+    "last 2 version"
+  ]
+    
 }
