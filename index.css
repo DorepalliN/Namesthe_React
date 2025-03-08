@@ -1,3 +1,24 @@
-#heading{
-    color: green;
+.logo >img {
+    width: 100px;
+    height: 70px;
+}
+.headercontiner{
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px  20px ;
+}
+.Nav_items{
+    padding: 5px 5px;
+
+}
+
+.Nav_items >ul{
+    display: flex;
+    list-style: none;
+}
+.Nav_items >ul >li{
+    padding: 10px;
+    
 }

@@ -4,8 +4,8 @@
   "description": "\"Hello this is Nagendra\"",
   
   "scripts": {
-    "start":"parcel Hello.html",
-    "build":"parcel build Hello.html",
+    "start":"parcel foodapp.html",
+    "build":"parcel build foodapp.html",
     "test": "jest"
   },
   "repository": {
