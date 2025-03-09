@@ -52,7 +52,7 @@
     
     padding: 10px;
     width: 20vh;
-    
+    height: 50vh;
     border-radius: 3px;
     background-color: rgb(198, 214, 209);
     word-wrap: break-word;
@@ -78,4 +78,8 @@
     border: 1px solid black;
     width: 50%;
     background-color: rgb(72, 72, 197);
+}
+.food_image{
+    width: 100%;
+    height: 30%;
 }
