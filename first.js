@@ -177,11 +177,12 @@ const Body =()=>{
             < input  type="text" placeholder="search"/> <button>🔍</button>
         </div >
         <div className="Restaurentcontainer">
-        <Restaurentcontainer resdata ={reslist[6]}/>
-        <Restaurentcontainer resdata ={reslist[1]}/>
-        <Restaurentcontainer resdata ={reslist[7]}/>
-        <Restaurentcontainer resdata ={reslist[0]}/>
-        <Restaurentcontainer resdata ={reslist[4]}/>
+
+           { reslist.map((restaurant)=>
+           <Restaurentcontainer key = {restaurant.data.id} resdata ={restaurant}/>
+        )}
+        
+        
         {/* <Restaurentcontainer resname ="venkateshwara foods" cusine="veg rice, veg pulov, bajji, puri"/>
         <Restaurentcontainer resname ="sri lakshmi foods" cusine="biryani, mixed rice, dal kichidi, puri"/> */}
         
