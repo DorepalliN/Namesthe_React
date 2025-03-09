@@ -191,15 +191,16 @@ const Body =()=>{
 }
 
 const Restaurentcontainer =(props) =>{
+    const {name,cuisines,avgRating,costForTwo,deliveryTime} =props.resdata?.data;
     return(
         <div>
             <div className="Restaurent_01">
                 <img className="food_image" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+props.resdata.data.cloudinaryImageId} alt="foodimage"></img>
-                <h4>{props.resdata.data.name}</h4>
-                <h5>{props.resdata.data.cuisines.join(" , ")}</h5>
-                <h5 className="Rating">{props.resdata.data.avgRating}</h5>
-                <h5>{props.resdata.data.costForTwo/100} for two</h5>
-                <h5>{props.resdata.data.deliveryTime}mins</h5>
+                <h4>{name}</h4>
+                <h5>{cuisines.join(" , ")}</h5>
+                <h5 className="Rating">{avgRating}</h5>
+                <h5>{costForTwo/100} for two</h5>
+                <h5>{deliveryTime}mins</h5>
             </div>
         </div>
     )
