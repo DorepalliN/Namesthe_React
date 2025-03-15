@@ -1,28 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
- 
-const Header = () => {
-    return(
-        <div className="headercontiner">
-            <div className="logo">
-                <img src="https://marketplace.canva.com/EAFaFUz4aKo/2/0/1600w/canva-yellow-abstract-cooking-fire-free-logo-JmYWTjUsE-Q.jpg"  alt="logo_image" />
-            </div>
-            <div className="title">
-               <h2>Namasthe Food Lovers</h2>
-            </div>
-            <div className="Nav_items">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Summary</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-
 const reslist = [
     {
       "type": "restaurant",
@@ -73,7 +48,7 @@ const reslist = [
         "cuisines": ["Pizza", "Italian", "Desserts"],
         "costForTwoString": "₹450 FOR TWO",
         "deliveryTime": 30,
-        "avgRating": "4.3",
+        "avgRating": "3.5",
         "address": "Domino's Pizza, ITPL Road, Whitefield, Bangalore",
         "locality": "Whitefield"
       }
@@ -109,7 +84,7 @@ const reslist = [
         "cuisines": ["Healthy Food", "Salads", "Sandwiches"],
         "costForTwoString": "₹320 FOR TWO",
         "deliveryTime": 25,
-        "avgRating": "4.0",
+        "avgRating": "3.7",
         "address": "Subway, 80 Feet Road, Koramangala, Bangalore",
         "locality": "Koramangala"
       }
@@ -169,60 +144,5 @@ const reslist = [
       }
     }
   ]
-    
-const Body =()=>{
-    return(
-        <div className="body">
-        <div className="Search">
-            < input  type="text" placeholder="search"/> <button>🔍</button>
-        </div >
-        <div className="Restaurentcontainer">
 
-           { reslist.map((restaurant)=>
-           <Restaurentcontainer key = {restaurant.data.id} resdata ={restaurant}/>
-        )}
-        
-        
-        {/* <Restaurentcontainer resname ="venkateshwara foods" cusine="veg rice, veg pulov, bajji, puri"/>
-        <Restaurentcontainer resname ="sri lakshmi foods" cusine="biryani, mixed rice, dal kichidi, puri"/> */}
-        
-        </div>
-        </div>
-    )
-}
-
-const Restaurentcontainer =(props) =>{
-    const {name,cuisines,avgRating,costForTwo,deliveryTime} =props.resdata?.data;
-    return(
-        <div>
-            <div className="Restaurent_01">
-                <img className="food_image" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+props.resdata.data.cloudinaryImageId} alt="foodimage"></img>
-                <h4>{name}</h4>
-                <h5>{cuisines.join(" , ")}</h5>
-                <h5 className="Rating">{avgRating}</h5>
-                <h5>{costForTwo/100} for two</h5>
-                <h5>{deliveryTime}mins</h5>
-            </div>
-        </div>
-    )
-}
-
-
-
-const Appcomponent = () =>{
-    return (
-        <div className="Appcontiner">
-         <Header/>
-         <Body/>
-        </div>
-
-    )
- }
-
-
-const root=ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<Appcomponent/>);
-
-
-
+  export default reslist;
